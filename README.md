@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LITT-UP Wedding Planner App
 
-## Getting Started
+**A modern web app to help couples plan their wedding effortlessly. Built with Next.js, Tailwind CSS, and Supabase.**
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
+- [About](#about)
+- [Features](#features)
+- [Demo](#demo)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About
+Planning a wedding can be overwhelming. **LITT-UP Wedding Planner App** simplifies the process by combining **guest management, budget tracking, checklists, vendor coordination**, and a **countdown timer** into a single platform.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+It also includes a **friendly AI chatbot assistant** to guide users through account setup and planning tasks.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Features
+- **Guest Management**
+  - Track RSVPs and plus-one status
+  - Add and edit guest details
+- **Budget Tracking**
+  - Manage expenses and visualize progress
+  - Categorize spending per wedding section
+- **Checklist Management**
+  - Track tasks with checkboxes
+  - Mark completed tasks dynamically
+- **Vendor Management**
+  - Store vendor contacts and service details
+- **Countdown Timer**
+  - Shows days remaining to the wedding
+- **AI Chatbot Assistant**
+  - Guides users through onboarding
+  - Answers basic wedding planning questions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Demo
+[Insert your live demo link here]
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
+- **Frontend:** Next.js, React.js, Tailwind CSS
+- **Backend:** Supabase (Database & Authentication)
+- **Other Libraries:** Swiper.js (for onboarding slides), Shadcn UI components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
