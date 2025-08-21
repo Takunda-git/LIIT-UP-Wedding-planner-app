@@ -45,7 +45,7 @@ It also includes a **friendly AI chatbot assistant** to guide users through acco
 ---
 
 ## Demo
-[Insert your live demo link here]
+[https://liit-up-wedding-planner-app-cwjd.vercel.app/]
 
 ---
 
