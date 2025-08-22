@@ -68,14 +68,15 @@ export default function WeddingAssistantPage() {
       if (!userId) return;
 
       const { error } = await supabase.from("profiles").insert([
-        {
-          user_id: userId,
-          name,
-          spouse_name: spouseName,
-          wedding_date: weddingDate,
-          budget: parseFloat(budget),
-        },
-      ]);
+  {
+    user_id: userId,
+    name,
+    spouse_name: spouseName,
+    wedding_date: weddingDate,
+    budget: parseFloat(budget),
+  },
+]);
+
       if (error) {
         setMessage("❌ Oops! Something went wrong: " + error.message);
       } else {

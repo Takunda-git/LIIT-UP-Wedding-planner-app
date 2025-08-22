@@ -1,4 +1,3 @@
-// ProtectedPage.tsx
 "use client";
 
 import { useEffect, useState } from "react";
@@ -8,12 +7,10 @@ import { useRouter } from "next/navigation";
 export default function ProtectedPage() {
   const supabase = createClient();
   const router = useRouter();
-
   const [message, setMessage] = useState("Confirming email...");
 
   useEffect(() => {
     const checkSession = async () => {
-      // Small delay to ensure Supabase is hydrated
       await new Promise((r) => setTimeout(r, 300));
 
       const { data: sessionData, error: sessionError } =
@@ -27,14 +24,14 @@ export default function ProtectedPage() {
 
       const userId = sessionData.session.user.id;
 
-      // ✅ Check if profile data exists
-      const { data: profileData, error: profileError } = await supabase
-        .from("user_profiles")
+      // ✅ Now checking in "profiles" (consistent with WeddingAssistantPage)
+      const { data: profileData } = await supabase
+        .from("profiles")
         .select("name")
         .eq("user_id", userId)
         .single();
 
-      if (profileError || !profileData) {
+      if (!profileData) {
         setMessage("Email confirmed! Redirecting to assistant...");
         setTimeout(() => router.push("/wedding-assistant"), 2000);
       } else {
@@ -52,5 +49,6 @@ export default function ProtectedPage() {
     </div>
   );
 }
+
 
 
